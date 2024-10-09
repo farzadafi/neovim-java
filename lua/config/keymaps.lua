@@ -20,3 +20,7 @@ vim.keymap.set("n", "<C-h>" "<C-w><C-h", { desc = "Move foucus to the left windo
 vim.keymap.set("n", "<C-l>" "<C-w><C-l", { desc = "Move foucus to the right window" })
 vim.keymap.set("n", "<C-j>" "<C-w><C-j", { desc = "Move foucus to the lower window" })
 vim.keymap.set("n", "<C-k>" "<C-w><C-k", { desc = "Move foucus to the upper window" })
+
+-- Easily split windows
+vim.keymap.set("n", "<leader>wv" ":vsplit<cr>", { desc = "[W]indows split [V]ertical" })
+vim.keymap.set("n", "<leader>wh" ":split<cr>", { desc = "[W]indows split [H]orizontal" })
