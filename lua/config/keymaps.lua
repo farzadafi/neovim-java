@@ -24,3 +24,8 @@ vim.keymap.set("n", "<C-k>" "<C-w><C-k", { desc = "Move foucus to the upper wind
 -- Easily split windows
 vim.keymap.set("n", "<leader>wv" ":vsplit<cr>", { desc = "[W]indows split [V]ertical" })
 vim.keymap.set("n", "<leader>wh" ":split<cr>", { desc = "[W]indows split [H]orizontal" })
+
+-- Syay in indent mode
+vim.keymap.set("v", "<", "<gv", { desc = "Indent left in visual mode" })
+vim.keymap.set("v", ">", ">gv", { desc = "Indent right in visual mode" })
+
