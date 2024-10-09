@@ -9,7 +9,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
       "--filter=blob:none",
       "https://github.com/folke/lazy.nvim.git",
     "--branch=stable", -- latest stable release
-    lazypath,
+    lazypath
   })
 end
 
@@ -26,7 +26,7 @@ local opts = {
  		-- Automatically check for package updates
  		enabled = true,
  		-- Don't spam us with notification every time there is an update available
- 		notify = false,
+ 		notify = false
  	}
 }
 
