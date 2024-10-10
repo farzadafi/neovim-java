@@ -1,3 +1,4 @@
+-- automatic close curly brace, paranteses and brucket :)
 return {
 	"windwp/nvim-autopairs",
 	event = { "InsertEnter" },
