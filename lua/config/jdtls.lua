@@ -324,3 +324,7 @@ local function setup_jdtls()
 	-- Start the JDTLS server
 	require("jdtls").start_or_attach(config)
 end
+
+return {
+	setup_jdtls = setup_jdtls,
+}
