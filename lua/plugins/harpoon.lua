@@ -1,3 +1,4 @@
+-- for change tab with tab and Shift+M key
 return {
 	"ThePrimeagen/harpoon",
 	event = "VeryLazy",
