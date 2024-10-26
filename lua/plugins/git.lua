@@ -23,6 +23,8 @@ return {
 			vim.keymap.set("n", "<leader>gC", ":Git commit -m ", { desc = "[G]it [C]ommit" })
 			-- Set a vim motion to <Space> + g + p to push the commited changes to the remote repository
 			vim.keymap.set("n", "<leader>gp", ":Git push", { desc = "[G]it [P]ush" })
+			-- Set a vim motion to <Space> + g + r for rollback (checkout) of the current file
+			vim.keymap.set("n", "<leader>gr", ":Git checkout -- %<CR>", { desc = "[G]it [R]ollback" })
 		end,
 	},
 }
