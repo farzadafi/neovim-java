@@ -16,7 +16,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 	end
 end
 
--- Add the path to the lazy plugin repositories to the vim runtime path
+-- Add the path to the lazy plugin repositories to the vim
 vim.opt.rtp:prepend(lazypath)
 
 -- Load the options from the config/options.lua file
