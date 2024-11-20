@@ -75,6 +75,8 @@ return {
 			vim.keymap.set("n", "<leader>cR", vim.lsp.buf.rename, { desc = "[C]ode [R]ename" })
 			-- Set a vim motion for <Space> + c + <Shift>D to go to where the code/object was declared in the project (class file)
 			vim.keymap.set("n", "<leader>cD", vim.lsp.buf.declaration, { desc = "[C]ode Goto [D]eclaration" })
+        -- Key mapping for Go to Definition
+      vim.keymap.set("n", "<leader>cw", "<Cmd>lua vim.lsp.buf.definition()<CR>", { desc = "[C]ode [W]here [d]efinition" })
 		end,
 	},
 }
