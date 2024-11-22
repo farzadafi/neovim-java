@@ -37,5 +37,7 @@ return {
 
 		-- Set a vim motion to close the debugging UI
 		vim.keymap.set("n", "<leader>dC", dapui.close, { desc = "[D]ebug [C]lose" })
+    -- Step over the current line (similar to F8)
+    vim.keymap.set("n", "<leader>dl", dap.step_over, { desc = "[D]ebug [l] over " })
 	end,
 }
